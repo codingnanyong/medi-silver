@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.parkhg.medisilver.activity.PrescriptionInfoActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xml_green_border"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imageColor"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:id="@+id/textHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/imageColor"
+            android:text="TextView"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textHospital"
+            android:layout_toEndOf="@+id/textHospital"
+            android:autoText="false"
+            android:contextClickable="false"
+            android:elegantTextHeight="false"
+            android:freezesText="false"
+            android:singleLine="false"
+            android:text="TextView"
+            android:textAllCaps="false" />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/textState"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#DCDCDC"/>
+
+        <TextView
+            android:id="@+id/textState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textDate"
+            android:layout_alignBottom="@+id/textDate"
+            android:layout_alignParentEnd="true"
+            android:text="TextView"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xml_green_border"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="처방전 상세 정보"
+        android:textColor="#00ff00"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/WGRAY"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

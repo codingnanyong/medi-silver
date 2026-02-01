@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="left|center"
+    android:weightSum="4">
+
+    <me.grantland.widget.AutofitLayout
+        android:id="@+id/Medicinelinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/textMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="8"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            autofit:minTextSize="1sp" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/textMedicine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:maxLines="2"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textSize="10sp"
+            autofit:minTextSize="1sp" />
+    </me.grantland.widget.AutofitLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layerType="software"
+        android:background="@drawable/dote" />
+
+    <me.grantland.widget.AutofitLayout
+        android:id="@+id/Diseaselinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/textDisease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="TextView"
+            android:textSize="12sp"
+            autofit:minTextSize="1sp" />
+    </me.grantland.widget.AutofitLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layerType="software"
+        android:background="@drawable/dote" />
+
+
+    <me.grantland.widget.AutofitLayout
+        android:id="@+id/Periodlinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/textPeriod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="TextView"
+            android:textSize="12sp"
+            autofit:minTextSize="1sp" />
+    </me.grantland.widget.AutofitLayout>
+
+    <ToggleButton
+        android:id="@+id/toggleOnOff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="ToggleButton"
+        android:visibility="invisible" />
+
+</LinearLayout>
