@@ -25,9 +25,9 @@ University Graduation Work
 
 ## Author
 
-🙋‍♂️ ryu-coding (TaeHyeon.Ryu)
+🙋‍♂️ codingnanyong (TaeHyeon.Ryu)
 
-- Personal Email: [ryu.coding1@gmail.com](mailto:ryu.coding1@gmail.com)
+- Personal Email: [codingnanyong@gmail.com](mailto:codingnanyong@gmail.com)
 
 ## 📝 License
 
